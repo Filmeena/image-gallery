@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="Image.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(1)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s" alt="Image 1">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(2)">
+            <img src="https://media.licdn.com/dms/image/C4D12AQHf8A-UEY_zQA/article-cover_image-shrink_600_2000/0/1520240863051?e=2147483647&v=beta&t=1dEHN-NdbEe_xjHOM9HITwXWaKPrW6SZy6SLpKWyYLc" alt="Image 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(3)">
+            <img src="https://t4.ftcdn.net/jpg/05/56/29/91/360_F_556299120_Z7SNJd3KpsN6hii0KmW7Z6TTNVkDwc77.jpg" alt="Image 3">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(4)">
+            <img src="https://img.freepik.com/premium-photo/professional-programmer-working-code-typing-laptop-keyboard-concept-software-development-coding-professional-work-technology-laptop_864588-54125.jpg" alt="Image 4">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(5)">
+            <img src="https://www.shutterstock.com/shutterstock/photos/2144412757/display_1500/stock-photo-portrait-of-young-cyber-girl-with-glowing-red-yellow-wires-hair-wears-science-fiction-metal-virtual-2144412757.jpg" alt="Image 5">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(6)">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/032/242/170/small/beautiful-waterfall-flowers-water-nature-waterfall-hd-wallpaper-ai-generated-free-photo.jpg" alt="Image 6">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(7)">
+            <img src="Tulsi.jpeg" alt="Image 7">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(8)">
+            <img src="Filmeena.jpeg" alt="Image 8">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(9)">
+            <img src="Kamla.jpeg" alt="Image 9">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(10)">
+            <img src="https://wallpapers.com/images/hd/beautiful-nature-pictures-syv21loi30wdz7i2.jpg" alt="Image 10">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(11)">
+            <img src="https://images.picxy.com/cache/2019/1/3/a95b9e3da9a5a38e82990525aa99d763.jpg" alt="Image 11">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(12)">
+            <img src="https://www.planetware.com/wpimages/2019/10/japan-in-pictures-most-beautiful-places-mount-fuji.jpg" alt="Image 12">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(13)">
+            <img src="https://aimadeimage.net/wp-content/uploads/2024/05/Lord-Shiva-Mahadev-Meditation-Wallpaper-2.jpg" alt="Image 13">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(14)">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/497/471/desktop-wallpaper-most-beautiful-gallery-most-beautiful-for.jpg" alt="Image 14">
+        </div>
+        <div class="thumbnail" onclick="openLightbox(); currentSlide(15)">
+            <img src="https://t4.ftcdn.net/jpg/07/08/47/75/360_F_708477508_DNkzRIsNFgibgCJ6KoTgJjjRZNJD4mb4.jpg" alt="Image 15">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <div class="slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s" alt="Image 1">
+                <div class="description">AI involves creating computer systems that can perform tasks requiring human intelligence, like recognizing speech and making decisions. It includes technologies such as machine learning and natural language processing.</div>
+            </div>
+            <div class="slide">
+                <img src="https://media.licdn.com/dms/image/C4D12AQHf8A-UEY_zQA/article-cover_image-shrink_600_2000/0/1520240863051?e=2147483647&v=beta&t=1dEHN-NdbEe_xjHOM9HITwXWaKPrW6SZy6SLpKWyYLc" alt="Image 2">
+                <div class="description">A coding language, also known as a programming language, is a formal system of communication used to write instructions that computers can understand and execute. These languages allow developers to create software, applications, websites, and more by translating human logic into a form that machines can process.</div>
+            </div>
+            <div class="slide">
+                <img src="https://t4.ftcdn.net/jpg/05/56/29/91/360_F_556299120_Z7SNJd3KpsN6hii0KmW7Z6TTNVkDwc77.jpg" alt="Image 3">
+                <div class="description">A skilled young woman excels in cybersecurity, often seen working on her laptop surrounded by multiple screens. She wears casual, practical attire and has a sharp intellect, identifying vulnerabilities and protecting systems from cyber threats. 💻🔒</div>
+            </div>
+            <div class="slide">
+                <img src="https://img.freepik.com/premium-photo/professional-programmer-working-code-typing-laptop-keyboard-concept-software-development-coding-professional-work-technology-laptop_864588-54125.jpg" alt="Image 4">
+                <div class="description">A coding language, also known as a programming language, is a formal system of communication used to write instructions that computers can understand and execute. These languages allow developers to create software, applications, websites, and more by translating human logic into a form that machines can process.</div>
+            </div>
+            <div class="slide">
+                <img src="https://www.shutterstock.com/shutterstock/photos/2144412757/display_1500/stock-photo-portrait-of-young-cyber-girl-with-glowing-red-yellow-wires-hair-wears-science-fiction-metal-virtual-2144412757.jpg" alt="Image 5">
+                <div class="description">A coding language, also known as a programming language, is a formal system of communication used to write instructions that computers can understand and execute. These languages allow developers to create software, applications, websites, and more by translating human logic into a form that machines can process.</div>
+            </div>
+            <div class="slide">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/032/242/170/small/beautiful-waterfall-flowers-water-nature-waterfall-hd-wallpaper-ai-generated-free-photo.jpg" alt="Image 6">
+                <div class="description">Nature encompasses the physical world and all its phenomena, including the landscapes, plants, animals, and ecosystems that make up our environment. It’s a vast and intricate system that operates through a series of interconnected processes and cycles.</div>
+            </div>
+            <div class="slide">
+                <img src="Tulsi.jpeg" alt="Image 7">
+                <div class="description">A young woman with long black hair is wearing a red and white traditional outfit. She has a calm expression and is in a homely indoor setting.</div>
+            </div>
+            <div class="slide">
+                <img src="Filmeena.jpeg" alt="Image 8">
+                <div class="description">The young girl in the image has long, wavy black hair that falls over her shoulders. She has a smooth complexion and is smiling softly. Her eyes are gently curved, and she has a subtle, natural look with no visible makeup. Her expression is warm and friendly, giving a sense of kindness.</div>
+            </div>
+            <div class="slide">
+                <img src="Kamla.jpeg" alt="Image 9">
+                <div class="description">This girl have a bright, joyful smile in a natural, forested setting. The sunlight highlights her cheerful expression, and her neat appearance adds to the serene mood. The photo captures a happy moment in nature.</div>
+            </div>
+            <div class="slide">
+                <img src="https://wallpapers.com/images/hd/beautiful-nature-pictures-syv21loi30wdz7i2.jpg" alt="Image 10">
+                <div class="description">Nature encompasses the physical world and all its phenomena, including the landscapes, plants, animals, and ecosystems that make up our environment. It’s a vast and intricate system that operates through a series of interconnected processes and cycles.</div>
+            </div>
+            <div class="slide">
+                <img src="https://images.picxy.com/cache/2019/1/3/a95b9e3da9a5a38e82990525aa99d763.jpg" alt="Image 11">
+                <div class="description">Nature encompasses the physical world and all its phenomena, including the landscapes, plants, animals, and ecosystems that make up our environment. It’s a vast and intricate system that operates through a series of interconnected processes and cycles.</div>
+            </div>
+            <div class="slide">
+                <img src="https://www.planetware.com/wpimages/2019/10/japan-in-pictures-most-beautiful-places-mount-fuji.jpg" alt="Image 12">
+                <div class="description">Nature encompasses the physical world and all its phenomena, including the landscapes, plants, animals, and ecosystems that make up our environment. It’s a vast and intricate system that operates through a series of interconnected processes and cycles.</div>
+            </div>
+            <div class="slide">
+                <img src="https://aimadeimage.net/wp-content/uploads/2024/05/Lord-Shiva-Mahadev-Meditation-Wallpaper-2.jpg" alt="Image 13">
+                <div class="description">Nature encompasses the physical world and all its phenomena, including the landscapes, plants, animals, and ecosystems that make up our environment. It’s a vast and intricate system that operates through a series of interconnected processes and cycles.</div>
+            </div>
+            <div class="slide">
+                <img src="https://e1.pxfuel.com/desktop-wallpaper/497/471/desktop-wallpaper-most-beautiful-gallery-most-beautiful-for.jpg" alt="Image 14">
+                <div class="description">Lord Shiva, an ascetic, and his divine consort, Goddess Shakti, create the universe. However, they separate for the sake of it and are reunited when she is reincarnated as Goddess Parvati.</div>
+            </div>
+            <div class="slide">
+                <img src="https://t4.ftcdn.net/jpg/07/08/47/75/360_F_708477508_DNkzRIsNFgibgCJ6KoTgJjjRZNJD4mb4.jpg" alt="Image 15">
+                <div class="description">Nature encompasses the physical world and all its phenomena, including the landscapes, plants, animals, and ecosystems that make up our environment. It’s a vast and intricate system that operates through a series of interconnected processes and cycles.</div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="Image.js"></script>
+</body>
+</html>
+
+
